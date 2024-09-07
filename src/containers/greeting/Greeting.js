@@ -8,6 +8,7 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import MaisaOverdose from "../../assets/images/MaisaOverdose.svg";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
@@ -25,7 +26,6 @@ export default function Greeting() {
               >
                 {" "}
                 {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
               <p
                 className={
@@ -56,8 +56,8 @@ export default function Greeting() {
               <DisplayLottie animationData={landingPerson} />
             ) : (
               <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
+              alt="greeting_img"
+              src={MaisaOverdose}
               ></img>
             )}
           </div>

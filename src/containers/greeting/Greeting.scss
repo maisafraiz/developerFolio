@@ -49,8 +49,10 @@
 }
 
 .greeting-image-div > img {
-  max-width: 100%;
-  height: auto;
+  max-width: 110%;
+  height: 110%;
+  margin-top: -30px;
+  margin-left: 50px; 
 }
 
 .wave-emoji {
@@ -111,7 +113,7 @@
     display: block;
   }
   .greeting-image-div {
-    height: 256px;
+    height: 350px;
   }
 }
 

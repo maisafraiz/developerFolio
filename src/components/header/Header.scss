@@ -6,6 +6,10 @@
 }
 
 /* header */
+.logo-image {
+  width: 70px;  /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+}
 
 .dark-menu {
   background-color: $darkBackground !important;

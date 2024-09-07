@@ -116,17 +116,18 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.kaggle ? (
+      {socialMediaLinks.lattes ? (
         <a
-          href={socialMediaLinks.kaggle}
-          className="icon-button kaggle"
+          href={socialMediaLinks.lattes}
+          className="icon-button lattes"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-kaggle"></i>
+          <i className="fas fa-university"></i>
           <span></span>
         </a>
       ) : null}
+      
     </div>
   );
 }

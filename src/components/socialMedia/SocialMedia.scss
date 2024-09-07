@@ -60,13 +60,14 @@
   background-color: $stackoverflow;
 }
 
-.kaggle i {
-  background-color: $kaggle;
+.lattes i {
+  background-color: $lattes;
 }
 
 .instagram i {
   background-color: $instagram;
 }
+
 
 /* Hover Transition */
 .twitter i:hover,
@@ -77,7 +78,7 @@
 .facebook i:hover,
 .instagram i:hover,
 .stack-overflow i:hover,
-.kaggle i:hover,
+.lattes i:hover,
 .medium i:hover {
   background-color: $textColor;
 }

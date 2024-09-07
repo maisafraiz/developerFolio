@@ -13,6 +13,8 @@ import {
   achievementSection,
   resumeSection
 } from "../../portfolio";
+import LogoSVG from '../../assets/images/CatBlue.svg';
+
 
 function Header() {
   const {isDark} = useContext(StyleContext);
@@ -28,9 +30,7 @@ function Header() {
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
         <a href="/" className="logo">
-          <span className="grey-color"> &lt;</span>
-          <span className="logo-name">{greeting.username}</span>
-          <span className="grey-color">/&gt;</span>
+          <img src={LogoSVG} alt="Logo" className="logo-image" />
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
@@ -90,4 +90,5 @@ function Header() {
     </Headroom>
   );
 }
+
 export default Header;

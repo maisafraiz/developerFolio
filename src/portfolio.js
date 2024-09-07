@@ -5,7 +5,7 @@
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
-// Splash Screen
+// Splash Screen FINISHED!
 
 const splashScreen = {
   enabled: true, // set false to disable splash screen
@@ -16,12 +16,12 @@ const splashScreen = {
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: false // Set to false to use static SVG
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Maisa Fraiz",
+  title: "Hi, I'm Maisa!",
   subTitle: emoji(
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
   ),
@@ -30,16 +30,16 @@ const greeting = {
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
-// Social Media Links
+// Social Media Links FINISHED!
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/maisafraiz",
+  gmail: "maisaofraiz@gmail.com;maisafraiz@hotmail.com",
+  medium: "https://medium.com/@maisafraiz",
+  stackoverflow: "https://stackoverflow.com/users/16039053/maisa-fraiz",
+  instagram: "https://www.instagram.com/maisena_fraiz/",
+  // kaggle is now lattes!
+  lattes: "http://lattes.cnpq.br/5002750268817973",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -126,23 +126,15 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Fundação Getulio Vargas - School of Applied Mathematics",
+      logo: require("./assets/images/logofgv.jpg"),
+      subHeader: "BSc in Data Science and Artificial Inteligence",
+      duration: "February 2020 - December 2023",
+      desc: "Full scholarship granted by FGV",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Undergratuate Thesis in Data Visualization",
+        "Vice-President in the Student's Union for a full term"
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -327,7 +319,7 @@ const blogSection = {
   display: true // Set false to hide this section, defaults to true
 };
 
-// Talks Sections
+// Talks Sections FINISHED (set to false)
 
 const talkSection = {
   title: "TALKS",
@@ -343,10 +335,10 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
-// Podcast Section
+// Podcast Section FINISHED (set to false)
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
@@ -356,7 +348,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -364,7 +356,6 @@ const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
 
-  // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -376,14 +367,14 @@ const contactInfo = {
   email_address: "saadpasta70@gmail.com"
 };
 
-// Twitter Section
+// Twitter Section FINISHED (set to false)
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; 
 
 export {
   illustration,
