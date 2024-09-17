@@ -1,10 +1,7 @@
 .education-main-div {
   display: flex;
-  width: 90%;
+  width: 100%;
   overflow: hidden;
-  padding: 20px 0px;
-  margin: 0px auto;
-  margin-top: 2rem;
 }
 
 .education-heading {
@@ -13,11 +10,7 @@
 }
 
 .education-image-div > img {
-  max-width: 280%;
-  height: 280%;
-  position: relative;
-  left: -300px;
-  top: -500px;
+  margin-left: -500px;
 }
 
 .education-section {

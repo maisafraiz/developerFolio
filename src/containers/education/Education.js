@@ -3,6 +3,7 @@ import "./Education.scss";
 import EducationCard from "../../components/educationCard/EducationCard";
 import { educationInfo } from "../../portfolio";
 import SittingFloorBackpackMap from "../../assets/images/SittingFloorBackpackMap.svg"; // Import the image
+import {Fade} from "react-reveal";
 
 export default function Education() {
   if (educationInfo.display) {
@@ -18,10 +19,12 @@ export default function Education() {
         </div>
       </div>
       <div className="education-image-div"> {/* Container for the image */}
+      <Fade left duration={1000}>
           <img
             alt="education_img"
             src={SittingFloorBackpackMap}
           />
+      </Fade>
         </div>
       </div>
     );

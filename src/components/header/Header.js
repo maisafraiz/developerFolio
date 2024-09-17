@@ -11,7 +11,8 @@ import {
   blogSection,
   talkSection,
   achievementSection,
-  resumeSection
+  resumeSection,
+  educationInfo
 } from "../../portfolio";
 import LogoSVG from '../../assets/images/CatBlue.svg';
 
@@ -21,6 +22,7 @@ function Header() {
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
+  const viewEducation = educationInfo.display;
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
@@ -41,9 +43,14 @@ function Header() {
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
-          {viewSkills && (
+        {viewSkills && (
             <li>
               <a href="#skills">Skills</a>
+            </li>
+          )}
+          {viewEducation && (
+            <li>
+              <a href="#education">Education</a>
             </li>
           )}
           {viewExperience && (
@@ -69,11 +76,6 @@ function Header() {
           {viewTalks && (
             <li>
               <a href="#talks">Talks</a>
-            </li>
-          )}
-          {viewResume && (
-            <li>
-              <a href="#resume">Resume</a>
             </li>
           )}
           <li>
